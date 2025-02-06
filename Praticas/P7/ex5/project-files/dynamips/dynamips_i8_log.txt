@@ -1,0 +1,49 @@
+Dec 17 16:47:57.495 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 17 16:47:57.495 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41665.
+Dec 17 16:47:57.504 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 17 16:47:57.504 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips 
+Dec 17 16:47:57.504 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips
+Dec 17 16:47:57.505 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/adabf8d2-94fd-49b2-92e0-bbef27b45bc0 
+Dec 17 16:47:57.505 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/adabf8d2-94fd-49b2-92e0-bbef27b45bc0
+Dec 17 16:47:57.505 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Dec 17 16:47:57.505 VM: VM R1 created.
+Dec 17 16:47:57.505 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5003 
+Dec 17 16:47:57.506 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Dec 17 16:47:57.506 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 17 16:47:57.506 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:47:57.506 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60a6a1e0 
+Dec 17 16:47:57.507 HYPERVISOR: exec_cmd: vm set_ios R1 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 17 16:47:57.507 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.4151.0000 
+Dec 17 16:47:57.507 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 17 16:47:57.508 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:47:57.508 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Dec 17 16:47:57.508 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:47:57.508 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-1FE-TX 
+Dec 17 16:47:58.705 HYPERVISOR: exec_cmd: nio create_udp udp-0ff1328d-290d-4c45-89e5-172dcf83feb1 10006 127.0.0.1 10007 
+Dec 17 16:47:58.984 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-0ff1328d-290d-4c45-89e5-172dcf83feb1 
+Dec 17 16:47:58.985 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:47:59.102 HYPERVISOR: exec_cmd: nio create_udp udp-e28cee5a-9623-45ec-bcaf-e4ec9f0fe495 10010 127.0.0.1 10011 
+Dec 17 16:47:59.104 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-e28cee5a-9623-45ec-bcaf-e4ec9f0fe495 
+Dec 17 16:47:59.104 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:47:59.530 HYPERVISOR: exec_cmd: nio create_udp udp-5d952821-b264-489f-b0cc-fc13cc162f82 10040 127.0.0.1 10041 
+Dec 17 16:47:59.532 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-5d952821-b264-489f-b0cc-fc13cc162f82 
+Dec 17 16:47:59.532 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:48:03.900 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Dec 17 16:48:03.910 VM: VM Ghost created.
+Dec 17 16:48:03.911 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 17 16:48:03.912 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 17 16:48:03.913 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 17 16:48:03.913 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 17 16:48:03.914 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Dec 17 16:48:03.914 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 17 16:48:04.245 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 17 16:48:04.246 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 17 16:48:04.354 VM: VM Ghost shutdown.
+Dec 17 16:48:04.354 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Dec 17 16:48:04.355 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 17 16:48:04.355 VM: VM Ghost destroyed.
+Dec 17 16:48:04.357 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Dec 17 16:48:04.357 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 17 16:48:04.357 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 17 16:48:04.358 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Dec 17 16:48:04.358 HYPERVISOR: exec_cmd: vm start R1 

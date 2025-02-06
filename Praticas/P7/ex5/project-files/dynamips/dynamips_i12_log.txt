@@ -1,0 +1,32 @@
+Dec 17 16:47:57.811 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 17 16:47:57.811 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59427.
+Dec 17 16:47:57.816 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 17 16:47:57.817 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips 
+Dec 17 16:47:57.817 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips
+Dec 17 16:47:57.817 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/27497cca-8c12-4625-a87c-fb1ec4e7de44 
+Dec 17 16:47:57.817 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/27497cca-8c12-4625-a87c-fb1ec4e7de44
+Dec 17 16:47:57.817 HYPERVISOR: exec_cmd: vm create RouterRack 5 c3725 
+Dec 17 16:47:57.818 VM: VM RouterRack created.
+Dec 17 16:47:57.818 HYPERVISOR: exec_cmd: vm set_con_tcp_port RouterRack 5011 
+Dec 17 16:47:57.818 HYPERVISOR: exec_cmd: c3725 get_mac_addr RouterRack 
+Dec 17 16:47:57.819 HYPERVISOR: exec_cmd: vm set_disk0 RouterRack 0 
+Dec 17 16:47:57.819 HYPERVISOR: exec_cmd: vm get_status RouterRack 
+Dec 17 16:47:57.819 HYPERVISOR: exec_cmd: vm set_idle_pc RouterRack 0x60a6a1e0 
+Dec 17 16:47:57.820 HYPERVISOR: exec_cmd: vm set_ios RouterRack /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 17 16:47:57.820 HYPERVISOR: exec_cmd: c3725 set_mac_addr RouterRack c205.423c.0000 
+Dec 17 16:47:57.820 HYPERVISOR: exec_cmd: vm set_nvram RouterRack 256 
+Dec 17 16:47:57.820 HYPERVISOR: exec_cmd: vm get_status RouterRack 
+Dec 17 16:47:57.821 HYPERVISOR: exec_cmd: vm slot_add_binding RouterRack 1 0 NM-1FE-TX 
+Dec 17 16:47:57.821 HYPERVISOR: exec_cmd: vm get_status RouterRack 
+Dec 17 16:47:57.821 HYPERVISOR: exec_cmd: vm slot_add_binding RouterRack 2 0 NM-1FE-TX 
+Dec 17 16:48:00.308 HYPERVISOR: exec_cmd: nio create_udp udp-97a93add-713c-4b94-aa69-4417eee46496 10056 127.0.0.1 10057 
+Dec 17 16:48:00.585 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RouterRack 0 0 udp-97a93add-713c-4b94-aa69-4417eee46496 
+Dec 17 16:48:00.586 HYPERVISOR: exec_cmd: vm get_status RouterRack 
+Dec 17 16:48:00.703 HYPERVISOR: exec_cmd: nio create_udp udp-b5729331-b952-4779-81cf-bd8014a84181 10060 127.0.0.1 10061 
+Dec 17 16:48:00.704 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RouterRack 0 1 udp-b5729331-b952-4779-81cf-bd8014a84181 
+Dec 17 16:48:00.705 HYPERVISOR: exec_cmd: vm get_status RouterRack 
+Dec 17 16:48:04.653 HYPERVISOR: exec_cmd: vm set_ghost_status RouterRack 2 
+Dec 17 16:48:04.654 HYPERVISOR: exec_cmd: vm set_ghost_file RouterRack /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex5/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 17 16:48:04.655 HYPERVISOR: exec_cmd: vm get_status RouterRack 
+Dec 17 16:48:04.656 HYPERVISOR: exec_cmd: vm set_config RouterRack configs/i5_startup-config.cfg 
+Dec 17 16:48:04.657 HYPERVISOR: exec_cmd: vm start RouterRack 

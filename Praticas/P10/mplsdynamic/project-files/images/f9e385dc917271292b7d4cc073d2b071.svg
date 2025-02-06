@@ -1,0 +1,53 @@
+<svg width="470" height="962"><text font-family="TypeWriter" font-size="10.0" font-weight="bold" fill="#000000" fill-opacity="1.0">conf t
+ip cef
+mpls ip
+mpls traffic-eng tunnels
+
+int Lo0
+ip add 10.10.10.1 255.255.255.255
+ip ospf 1 area 0
+
+int Lo1
+ip add 10.1.1.101 255.255.255.255
+ip ospf 1 area 0
+
+int f0/1
+no shut
+ip add 10.1.1.5 255.255.255.252
+ip ospf 1 area 0
+mpls ip
+mpls traffic-eng tunnels
+ip rsvp bandwidth 512 512
+
+int f0/0
+no shut
+ip add 10.1.1.9 255.255.255.252
+ip ospf 1 area 0
+mpls ip
+mpls traffic-eng tunnels
+ip rsvp bandwidth 512 512
+
+router ospf 1
+mpls traffic-eng area 0
+mpls traffic-eng router-id Loopback 0
+
+! ------------------------- DYNAMIC TUNNELS CONFIGURATION -------------------------
+
+interface Tunnel 3
+ip unnumbered Loopback0
+tunnel destination 10.10.10.3
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng bandwidth 100
+tunnel mpls traffic-eng path-option 1 dynamic
+
+interface Tunnel 4
+ip unnumbered Loopback0
+tunnel destination 10.10.10.3
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng auto-bw
+tunnel mpls traffic-eng path-option 1 dynamic
+
+end
+write</text></svg>

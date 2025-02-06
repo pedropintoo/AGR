@@ -1,0 +1,10 @@
+Jan 06 16:40:21.187 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 06 16:40:21.187 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59613.
+Jan 06 16:40:21.195 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 06 16:40:21.195 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex3/project-files/dynamips 
+Jan 06 16:40:21.195 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P7/ex3/project-files/dynamips
+Jan 06 16:40:21.195 HYPERVISOR: exec_cmd: nio_bridge create Hub2 
+Jan 06 16:40:22.934 HYPERVISOR: exec_cmd: nio create_udp udp-7caac725-a37f-4acf-9f35-0c25f5d64649 10151 127.0.0.1 10150 
+Jan 06 16:40:22.934 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-7caac725-a37f-4acf-9f35-0c25f5d64649 
+Jan 06 16:40:22.983 HYPERVISOR: exec_cmd: nio create_udp udp-7fbd658a-9e43-4496-9c1e-c8e8238b10e2 10152 127.0.0.1 10153 
+Jan 06 16:40:22.983 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub2 udp-7fbd658a-9e43-4496-9c1e-c8e8238b10e2 

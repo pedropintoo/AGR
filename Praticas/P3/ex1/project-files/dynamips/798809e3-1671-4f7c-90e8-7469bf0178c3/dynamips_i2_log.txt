@@ -1,0 +1,13 @@
+Nov 11 23:57:36.923 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 11 23:57:36.923 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41035.
+Nov 11 23:57:36.931 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 11 23:57:36.931 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P3/ex1/project-files/dynamips 
+Nov 11 23:57:36.931 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P3/ex1/project-files/dynamips
+Nov 11 23:57:36.931 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Nov 11 23:57:37.981 HYPERVISOR: exec_cmd: nio create_udp udp-385337f7-fa04-403f-8f7d-ea24920aba50 10017 127.0.0.1 10016 
+Nov 11 23:57:37.981 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-385337f7-fa04-403f-8f7d-ea24920aba50 
+Nov 11 23:57:37.991 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-385337f7-fa04-403f-8f7d-ea24920aba50 1 
+Nov 12 00:11:25.319 HYPERVISOR: exec_cmd: ethsw delete Switch2 
+Nov 12 00:11:25.322 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 12 00:11:25.344 HYPERVISOR: Stopped.
+Nov 12 00:11:25.344 GENERAL: reset done.

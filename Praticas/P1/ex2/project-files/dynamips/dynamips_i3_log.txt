@@ -1,0 +1,41 @@
+Nov 12 22:51:34.410 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 12 22:51:34.410 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46537.
+Nov 12 22:51:34.415 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 12 22:51:34.415 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/dynamips 
+Nov 12 22:51:34.415 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/dynamips
+Nov 12 22:51:34.416 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/dynamips/f1429400-fdbb-4455-9061-1b1daee72ba4 
+Nov 12 22:51:34.416 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/dynamips/f1429400-fdbb-4455-9061-1b1daee72ba4
+Nov 12 22:51:34.416 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+Nov 12 22:51:34.417 VM: VM ESW1 created.
+Nov 12 22:51:34.417 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5008 
+Nov 12 22:51:34.418 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Nov 12 22:51:34.418 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Nov 12 22:51:34.419 HYPERVISOR: exec_cmd: vm set_ios ESW1 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 12 22:51:34.420 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c201.86fa.0000 
+Nov 12 22:51:34.420 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Nov 12 22:51:34.421 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:34.422 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Nov 12 22:51:34.422 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:34.423 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 2 0 NM-1FE-TX 
+Nov 12 22:51:35.204 HYPERVISOR: exec_cmd: nio create_udp udp-b875b6be-ab81-45bc-aaf3-209d67a25ba8 10002 127.0.0.1 10003 
+Nov 12 22:51:35.501 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-b875b6be-ab81-45bc-aaf3-209d67a25ba8 
+Nov 12 22:51:35.502 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:35.654 HYPERVISOR: exec_cmd: nio create_udp udp-22e02cea-d74a-431a-bbc6-da79cc8e1dc7 10006 127.0.0.1 10007 
+Nov 12 22:51:35.657 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-22e02cea-d74a-431a-bbc6-da79cc8e1dc7 
+Nov 12 22:51:35.657 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:35.816 HYPERVISOR: exec_cmd: nio create_udp udp-6e7e3457-bac5-4bd3-8f01-ab314b9ec53e 10010 127.0.0.1 10011 
+Nov 12 22:51:35.819 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 6 udp-6e7e3457-bac5-4bd3-8f01-ab314b9ec53e 
+Nov 12 22:51:35.820 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:36.800 HYPERVISOR: exec_cmd: nio create_udp udp-7358e9ec-a43f-4c2e-be94-8048651d2f1c 10026 127.0.0.1 10027 
+Nov 12 22:51:36.802 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 13 udp-7358e9ec-a43f-4c2e-be94-8048651d2f1c 
+Nov 12 22:51:36.802 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:51.587 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Nov 12 22:51:51.588 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Nov 12 22:51:51.588 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:51:51.589 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i1_startup-config.cfg 
+Nov 12 22:51:51.590 HYPERVISOR: exec_cmd: vm start ESW1 
+Nov 12 22:51:57.067 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Nov 12 22:51:57.068 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Nov 12 22:51:57.069 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 12 22:53:30.126 HYPERVISOR: exec_cmd: nio bind_filter udp-7358e9ec-a43f-4c2e-be94-8048651d2f1c 2 capture 
+Nov 12 22:53:30.127 HYPERVISOR: exec_cmd: nio setup_filter udp-7358e9ec-a43f-4c2e-be94-8048651d2f1c 2 en10mb /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P1/ex2/project-files/captures/ESW1_FastEthernet113_to_ESW2_FastEthernet113.pcap 

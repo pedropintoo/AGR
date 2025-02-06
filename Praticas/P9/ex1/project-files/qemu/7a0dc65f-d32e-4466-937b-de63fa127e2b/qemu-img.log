@@ -1,0 +1,1 @@
+Formatting '/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P9/ex1/project-files/qemu/7a0dc65f-d32e-4466-937b-de63fa127e2b/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=31457280000 backing_file=/root/GNS3/images/QEMU/vyos-hda.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16

@@ -1,0 +1,39 @@
+Nov 27 11:09:15.183 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 27 11:09:15.183 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33207.
+Nov 27 11:09:15.188 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 27 11:09:15.188 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P10/mpls/project-files/dynamips 
+Nov 27 11:09:15.189 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P10/mpls/project-files/dynamips
+Nov 27 11:09:15.189 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P10/mpls/project-files/dynamips/33fd7db0-b535-494d-9f4a-8994f4e6bc14 
+Nov 27 11:09:15.189 GENERAL: working_dir=/home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P10/mpls/project-files/dynamips/33fd7db0-b535-494d-9f4a-8994f4e6bc14
+Nov 27 11:09:15.189 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+Nov 27 11:09:15.189 VM: VM R3 created.
+Nov 27 11:09:15.190 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Nov 27 11:09:15.190 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Nov 27 11:09:15.191 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 27 11:09:15.191 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 27 11:09:15.191 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a6a1e0 
+Nov 27 11:09:15.192 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Nov 27 11:09:15.192 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Nov 27 11:09:15.193 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 27 11:09:15.194 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Nov 27 11:09:15.194 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 27 11:09:15.195 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-1FE-TX 
+Nov 27 11:09:15.296 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 27 11:09:18.488 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 27 11:09:21.680 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 27 11:09:23.975 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 27 11:12:43.991 HYPERVISOR: exec_cmd: nio create_udp udp-d273561d-316a-417f-bffd-5dc30199b2dc 10010 127.0.0.1 10011 
+Nov 27 11:12:44.272 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-d273561d-316a-417f-bffd-5dc30199b2dc 
+Nov 27 11:12:44.272 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 27 11:12:47.138 HYPERVISOR: exec_cmd: nio create_udp udp-f694868b-cd94-4507-ad93-47d1e916348c 10014 127.0.0.1 10015 
+Nov 27 11:12:47.140 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-f694868b-cd94-4507-ad93-47d1e916348c 
+Nov 27 11:12:47.141 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 27 11:29:31.005 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 27 11:29:31.007 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/pedro/Documents/Universidade/3ano/1semestre/AGR/Praticas/P10/mpls/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Nov 27 11:29:31.007 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 27 11:29:31.008 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Nov 27 11:29:31.008 HYPERVISOR: exec_cmd: vm start R3 
+Nov 27 11:30:31.291 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 27 11:30:31.303 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 27 11:35:01.328 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 27 11:35:01.329 HYPERVISOR: exec_cmd: vm extract_config R3 
